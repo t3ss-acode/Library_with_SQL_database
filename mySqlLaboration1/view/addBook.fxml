@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddBookController">
+   <content>
+      <HBox>
+         <children>
+            <VBox fx:id="addBookVbox">
+               <children>
+                  <HBox prefHeight="19.0" prefWidth="567.0">
+                     <children>
+                        <Label text="Add Book">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="230.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="150.0" text="Title">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Region prefHeight="51.0" prefWidth="10.0" />
+                        <TextField fx:id="titleTextfield">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Circle fx:id="titleCircle" fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <ComboBox fx:id="categoryBox" prefWidth="130.0" promptText="Category">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="150.0" text="ISBN">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Region prefHeight="51.0" prefWidth="10.0" />
+                        <TextField fx:id="isbnTextfield">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Circle fx:id="isbnCircle" fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </Circle>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="150.0" text="Pages">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Region prefHeight="51.0" prefWidth="10.0" />
+                        <TextField fx:id="pagesTextfield">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Circle fx:id="pagesCircle" fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </Circle>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Description">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Region prefHeight="100.0" prefWidth="10.0" />
+                        <TextArea fx:id="descriptionTextfield" prefHeight="200.0" prefWidth="200.0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </TextArea>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="150.0" text="Rating">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Region prefHeight="51.0" prefWidth="10.0" />
+                        <TextField fx:id="ratingTextfield" prefHeight="25.0" prefWidth="41.0" promptText="0-5">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Circle fx:id="ratingCircle" fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </Circle>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="23.0" prefWidth="567.0">
+                     <children>
+                        <Region prefHeight="72.0" prefWidth="236.0" />
+                        <Button fx:id="submitBookButton" mnemonicParsing="false" onAction="#addBook" prefHeight="31.0" prefWidth="85.0" text="Next" />
+                        <Region prefHeight="100.0" prefWidth="35.0" />
+                        <Region prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </VBox>
+            <VBox fx:id="searchAuthorVbox" disable="true" prefHeight="350.0" prefWidth="291.0">
+               <children>
+                  <HBox prefHeight="56.0" prefWidth="307.0">
+                     <children>
+                        <Label text="Search Existing Author">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="searchAuthor" />
+                        <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchExistingAuthor" text="Search" />
+                     </children>
+                  </HBox>
+                  <TableView fx:id="searchTable" prefHeight="368.0" prefWidth="271.0">
+                    <columns>
+                      <TableColumn fx:id="firstNameColumn" prefWidth="89.0" text="Name" />
+                      <TableColumn fx:id="lastNameColumn" text="Lastname" />
+                        <TableColumn fx:id="dobColumn" prefWidth="101.0" text="Date of Birth" />
+                    </columns>
+                  </TableView>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#addExistingAuthor" text="Add" />
+                        <Button mnemonicParsing="false" onAction="#initAddNewAuthor" text="Next" />
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox fx:id="addAuthorVbox" disable="true" prefHeight="350.0" prefWidth="267.0">
+               <children>
+                  <HBox prefHeight="51.0" prefWidth="212.0">
+                     <children>
+                        <Label text="Add New Authors">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <TextField fx:id="firstnameTextfield" prefHeight="31.0" prefWidth="256.0" promptText="Firstname">
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Circle fx:id="firstnameCircle" fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" top="20.0" />
+                           </HBox.margin>
+                        </Circle>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <TextField fx:id="lastnameTextfield" prefHeight="31.0" prefWidth="247.0" promptText="Lastname">
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Circle fx:id="lastnameCircle" fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" top="20.0" />
+                           </HBox.margin>
+                        </Circle>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <TextField fx:id="dateOfBirthTextfield" prefHeight="31.0" prefWidth="226.0" promptText="Birthdate (xxxx-xx-xx)">
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Circle fx:id="dateOfBirthCircle" fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" top="20.0" />
+                           </HBox.margin>
+                        </Circle>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="58.0" prefWidth="240.0">
+                     <children>
+                        <Button fx:id="submitButton" mnemonicParsing="false" onAction="#addNewAuthor" text="Submit">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="moreAuthorsButton" disable="true" mnemonicParsing="false" onAction="#resetAuthor" text="Add More">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="doneButton" disable="true" mnemonicParsing="false" onAction="#addAuthorsToBookAndDB" prefHeight="31.0" prefWidth="66.0" text="Done">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="70.0" right="40.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </content>
+   <header>
+      <Label text="Create Book Interface">
+         <padding>
+            <Insets left="400.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font></Label>
+   </header>
+   <graphic>
+      <Region />
+   </graphic>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</DialogPane>
